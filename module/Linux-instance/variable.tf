@@ -17,3 +17,7 @@ variable "security-group" {
 variable "key-pair" {
   default = {}
 }
+
+variable "az1" {
+  default = "eu-west-2a"
+}
