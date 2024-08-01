@@ -17,3 +17,7 @@ variable "security-group" {
 variable "keypair" {
   default = {}
 }
+
+variable "replica-root-volume" {
+  default = {}
+}

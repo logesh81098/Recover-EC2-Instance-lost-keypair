@@ -26,4 +26,5 @@ module "recovery-linux-server" {
   subnet-id = module.vpc.subnet-id
   security-group = module.security-group.security-group-linix
   keypair = module.recovery-keypair.recovery-key
+  replica-root-volume = module.linux-instance.secondary-root-volume
 }
