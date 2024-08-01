@@ -20,3 +20,10 @@ module "linux-instance" {
 module "recovery-keypair" {
   source = "./module/Recovery-keypair"
 }
+
+module "recovery-linux-server" {
+  source = "./module/Recovery-linux-server"
+  subnet-id = module.vpc.subnet-id
+  security-group = module.security-group.security-group-linix
+  keypair = module.recovery-keypair.recovery-key
+}
