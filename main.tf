@@ -16,3 +16,7 @@ module "linux-instance" {
   subnet-id = module.vpc.subnet-id
   key-pair = module.keypair.key-name
 }
+
+module "recovery-keypair" {
+  source = "./module/Recovery-keypair"
+}
